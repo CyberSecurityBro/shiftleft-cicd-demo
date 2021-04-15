@@ -6,3 +6,5 @@ Self hosted runner in azure
 Added curl to download shiftleft agent into VM 
 
 Add gitclone for my app repo
+
+#need to update clothing line for summer
