@@ -1,3 +1,2 @@
-# shiftleft-demo-reconnect
-# shiftleft-demo-reconnect
 # shiftleft-cicd-demo
+Added more stuff to make it automate
