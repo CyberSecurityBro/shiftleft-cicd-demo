@@ -1,4 +1,8 @@
 # shiftleft-cicd-demo
 Added more stuff to make it automate
 
-Added the runner and set the shiftleft app to download
+Self hosted runner in azure
+
+Added curl to download shiftleft agent into VM 
+
+Add gitclone for my app repo
