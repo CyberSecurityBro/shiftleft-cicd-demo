@@ -52,8 +52,8 @@ jobs:
           SHIFTLEFT_REGION: ${{ secrets.SHIFTLEFT_REGION }}
         run: |
           git clone https://github.com/CyberSecurityBro/demo-app
-          docker build -t CyberSecurityBro/myapp ./demo-app
-          docker save -o myapp.tar CyberSecurityBro/myapp
+          docker build -t cybersecuritybro/myapp ./demo-app
+          docker save -o myapp.tar cybersecuritybro/myapp
           chmod +x ./shiftleft
           ./shiftleft image-scan -i myapp.tar
   
