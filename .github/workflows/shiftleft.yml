@@ -36,7 +36,7 @@ jobs:
         env: 
           CHKP_CLOUDGUARD_ID: ${{ secrets.CHKP_CLOUDGUARD_ID }}
           CHKP_CLOUDGUARD_SECRET: ${{ secrets.CHKP_CLOUDGUARD_SECRET }}
-          SHIFTLEFT_REGION: ${{ secrets.SHIFTLEFT-REGION }}
+          SHIFTLEFT_REGION: ${{ secrets.SHIFTLEFT_REGION }}
         run: |
           git clone https://github.com/CyberSecurityBro/demo-app
           ./shiftleft code-scan -sevt 4 -s ./demo-app
@@ -49,7 +49,7 @@ jobs:
         env: 
           CHKP_CLOUDGUARD_ID: ${{ secrets.CHKP_CLOUDGUARD_ID }}
           CHKP_CLOUDGUARD_SECRET: ${{ secrets.CHKP_CLOUDGUARD_SECRET }}
-          SHIFTLEFT_REGION: ${{ secrets.SHIFTLEFT-REGION }}
+          SHIFTLEFT_REGION: ${{ secrets.SHIFTLEFT_REGION }}
         run: |
           git clone https://github.com/CyberSecurityBro/demo-app
           docker build -t CyberSecurityBro/myapp ./demo-app
@@ -65,7 +65,7 @@ jobs:
         env:
           CHKP_CLOUDGUARD_ID: ${{ secrets.CHKP_CLOUDGUARD_ID }}
           CHKP_CLOUDGUARD_SECRET: ${{secrets.CHKP_CLOUDGUARD_SECRET }}
-          SHIFTLEFT_REGION: ${{ secrets.SHIFTLEFT-REGION }}
+          SHIFTLEFT_REGION: ${{ secrets.SHIFTLEFT_REGION }}
         run: |
           git clone https://github.com/CyberSecurityBro/demo-app
           chmod +x ./shiftleft
