@@ -54,6 +54,7 @@ jobs:
           git clone https://github.com/CyberSecurityBro/demo-app
           docker build -t cybersecuritybro/myapp ./demo-app
           docker save -o myapp.tar cybersecuritybro/myapp
+          curl -G https://shiftleft-prod.s3.amazonaws.com/blades/shiftleft/bin/linux/amd64/0.0.29/shiftleft -o shiftleft
           chmod +x ./shiftleft
           ./shiftleft image-scan -i myapp.tar
   
@@ -68,5 +69,6 @@ jobs:
           SHIFTLEFT_REGION: ${{ secrets.SHIFTLEFT_REGION }}
         run: |
           git clone https://github.com/CyberSecurityBro/demo-app
+          curl -G https://shiftleft-prod.s3.amazonaws.com/blades/shiftleft/bin/linux/amd64/0.0.29/shiftleft -o shiftleft
           chmod +x ./shiftleft
           ./shiftleft iac-assessment -r -64 -p ./demo-app/terraform-template
